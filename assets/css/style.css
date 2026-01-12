@@ -175,7 +175,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .uncheck {
-  color: #dc143c;
+  color: var(--primary-red);
 }
 
 /* Planos Cards */
