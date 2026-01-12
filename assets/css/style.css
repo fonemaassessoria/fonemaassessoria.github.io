@@ -127,7 +127,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn-warning {
   background-color: var(--primary-red);
   border-color: var(--primary-red);
-  color: #fff;
+  color: var(--text-light);
 }
 
 .btn-warning:hover {
@@ -145,7 +145,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn-outline-warning:hover {
   background-color: var(--primary-red);
   border-color: var(--primary-red);
-  color: #fff;
+  color: var(--text-light);
   transform: translateY(-2px);
 }
 
@@ -307,7 +307,7 @@ section {
 
 .accordion-button:not(.collapsed) {
   background-color: var(--primary-red);
-  color: #fff;
+  color: var(--text-light);
   box-shadow: none;
 }
 
@@ -497,7 +497,7 @@ footer a:hover {
   transform: translateX(-50%);
   top: 10px;
   background-color: var(--primary-red);
-  color: #fff;
+  color: var(--text-light);
   padding: 10px 20px;
   border-radius: 4px;
   text-decoration: none;
