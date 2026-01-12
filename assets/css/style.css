@@ -1,16 +1,16 @@
 /* ========================================
    ALTA PERFORMANCE FITNESS - CUSTOM STYLES
    Inspiração: Estética de alta performance (Renato Cariani)
-   Paleta: Preto, amarelo/dourado, cinza, branco
+   Paleta: Preto, vermelho energético, cinza, branco
    Energia: Alta intensidade, contraste forte, foco em resultados
    ======================================== */
 
 :root {
   /* Cores principais - inspiradas em alta performance */
-  --primary-yellow: #FFC107;
+  --primary-red: #DC143C;
   --primary-dark: #0d0d0d;
   --secondary-dark: #1a1a1a;
-  --accent-gold: #FFD700;
+  --accent-red: #FF1744;
   --text-light: #ffffff;
   --text-muted: #a0a0a0;
   --bg-light: #f8f9fa;
@@ -63,8 +63,8 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100%;
   background: 
-    radial-gradient(circle at 20% 50%, rgba(255, 193, 7, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, rgba(255, 215, 0, 0.08) 0%, transparent 50%);
+    radial-gradient(circle at 20% 50%, rgba(220, 20, 60, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(255, 23, 68, 0.08) 0%, transparent 50%);
   z-index: 1;
 }
 
@@ -128,27 +128,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-warning {
-  background-color: var(--primary-yellow);
-  border-color: var(--primary-yellow);
-  color: #000;
+  background-color: var(--primary-red);
+  border-color: var(--primary-red);
+  color: var(--text-light);
 }
 
 .btn-warning:hover {
-  background-color: var(--accent-gold);
-  border-color: var(--accent-gold);
+  background-color: var(--accent-red);
+  border-color: var(--accent-red);
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(255, 193, 7, 0.4);
+  box-shadow: 0 8px 20px rgba(220, 20, 60, 0.4);
 }
 
 .btn-outline-warning {
-  border-color: var(--primary-yellow);
-  color: var(--primary-yellow);
+  border-color: var(--primary-red);
+  color: var(--primary-red);
 }
 
 .btn-outline-warning:hover {
-  background-color: var(--primary-yellow);
-  border-color: var(--primary-yellow);
-  color: #000;
+  background-color: var(--primary-red);
+  border-color: var(--primary-red);
+  color: var(--text-light);
   transform: translateY(-2px);
 }
 
@@ -178,7 +178,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .uncheck {
-  color: #ffc107;
+  color: var(--primary-red);
 }
 
 /* Planos Cards */
@@ -187,7 +187,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #planos .card:hover {
-  border-color: var(--primary-yellow) !important;
+  border-color: var(--primary-red) !important;
 }
 
 /* ========================================
@@ -215,7 +215,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-link:hover {
-  color: var(--primary-yellow) !important;
+  color: var(--primary-red) !important;
 }
 
 .nav-link::after {
@@ -225,7 +225,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 50%;
   width: 0;
   height: 2px;
-  background-color: var(--primary-yellow);
+  background-color: var(--primary-red);
   transition: var(--transition-base);
   transform: translateX(-50%);
 }
@@ -238,7 +238,7 @@ h1, h2, h3, h4, h5, h6 {
    STATS SECTION
    ======================================== */
 .stats-section {
-  background: linear-gradient(135deg, #FFC107 0%, #FFD700 100%);
+  background: linear-gradient(135deg, #DC143C 0%, #FF1744 100%);
 }
 
 .stats-section h3 {
@@ -290,8 +290,8 @@ section {
 }
 
 #depoimentos .card:hover {
-  border-color: var(--primary-yellow);
-  box-shadow: 0 10px 30px rgba(255, 193, 7, 0.15);
+  border-color: var(--primary-red);
+  box-shadow: 0 10px 30px rgba(220, 20, 60, 0.15);
 }
 
 .avatar-placeholder {
@@ -309,14 +309,14 @@ section {
 }
 
 .accordion-button:not(.collapsed) {
-  background-color: var(--primary-yellow);
-  color: var(--primary-dark);
+  background-color: var(--primary-red);
+  color: var(--text-light);
   box-shadow: none;
 }
 
 .accordion-button:focus {
   box-shadow: none;
-  border-color: var(--primary-yellow);
+  border-color: var(--primary-red);
 }
 
 .accordion-button::after {
@@ -331,7 +331,7 @@ section {
    CTA FINAL
    ======================================== */
 .cta-final {
-  background: linear-gradient(135deg, #FFC107 0%, #FFD700 50%, #FFC107 100%);
+  background: linear-gradient(135deg, #DC143C 0%, #FF1744 50%, #DC143C 100%);
   position: relative;
   overflow: hidden;
 }
@@ -422,7 +422,7 @@ footer {
 }
 
 footer a:hover {
-  color: var(--primary-yellow) !important;
+  color: var(--primary-red) !important;
 }
 
 /* ========================================
@@ -498,7 +498,7 @@ footer a:hover {
 .btn:focus,
 .nav-link:focus,
 .accordion-button:focus {
-  outline: 3px solid var(--primary-yellow);
+  outline: 3px solid var(--primary-red);
   outline-offset: 2px;
 }
 
@@ -513,8 +513,8 @@ footer a:hover {
   left: 50%;
   transform: translateX(-50%);
   top: 10px;
-  background-color: var(--primary-yellow);
-  color: #000;
+  background-color: var(--primary-red);
+  color: var(--text-light);
   padding: 10px 20px;
   border-radius: 4px;
   text-decoration: none;
@@ -523,7 +523,7 @@ footer a:hover {
 
 /* High contrast text for accessibility */
 .text-warning {
-  color: var(--primary-yellow) !important;
+  color: var(--primary-red) !important;
 }
 
 /* ========================================
