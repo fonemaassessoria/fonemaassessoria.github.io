@@ -475,15 +475,7 @@ footer a:hover {
   }
   
   /* Fix for blank space after footer on mobile */
-  html {
-    overflow-x: hidden;
-    width: 100%;
-    position: relative;
-  }
-  
   body {
-    overflow-x: hidden;
-    width: 100%;
     position: relative;
   }
   
