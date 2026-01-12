@@ -19,6 +19,9 @@
   --font-heading: 'Montserrat', sans-serif;
   --font-body: 'Roboto', sans-serif;
   
+  /* Layout */
+  --navbar-height: 70px;
+  
   /* Transições */
   --transition-base: all 0.3s ease;
 }
@@ -247,7 +250,7 @@ h1, h2, h3, h4, h5, h6 {
    SECTIONS
    ======================================== */
 section {
-  scroll-margin-top: 70px;
+  scroll-margin-top: var(--navbar-height);
 }
 
 .icon-box {
@@ -485,7 +488,7 @@ footer a:hover {
   }
   
   .hero-section .row {
-    min-height: calc(100vh - 70px);
+    min-height: calc(100vh - var(--navbar-height));
   }
 }
 
