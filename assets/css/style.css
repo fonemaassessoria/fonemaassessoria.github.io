@@ -473,6 +473,28 @@ footer a:hover {
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
   }
+  
+  /* Fix for blank space after footer on mobile */
+  html {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+  }
+  
+  body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+  }
+  
+  /* Adjust hero section height on mobile to prevent overflow */
+  .hero-section {
+    min-height: auto;
+  }
+  
+  .hero-section .row {
+    min-height: calc(100vh - 70px);
+  }
 }
 
 /* ========================================
@@ -531,6 +553,8 @@ img[loading="lazy"] {
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 /* Reduce motion for users who prefer it */
