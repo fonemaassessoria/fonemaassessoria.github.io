@@ -19,6 +19,9 @@
   --font-heading: 'Montserrat', sans-serif;
   --font-body: 'Roboto', sans-serif;
   
+  /* Layout */
+  --navbar-height: 70px;
+  
   /* Transições */
   --transition-base: all 0.3s ease;
 }
@@ -247,7 +250,7 @@ h1, h2, h3, h4, h5, h6 {
    SECTIONS
    ======================================== */
 section {
-  scroll-margin-top: 70px;
+  scroll-margin-top: var(--navbar-height);
 }
 
 .icon-box {
@@ -473,6 +476,20 @@ footer a:hover {
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
   }
+  
+  /* Fix for blank space after footer on mobile */
+  body {
+    position: relative;
+  }
+  
+  /* Adjust hero section height on mobile to prevent overflow */
+  .hero-section {
+    min-height: auto;
+  }
+  
+  .hero-section .row {
+    min-height: calc(100vh - var(--navbar-height));
+  }
 }
 
 /* ========================================
@@ -531,6 +548,8 @@ img[loading="lazy"] {
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 /* Reduce motion for users who prefer it */
